@@ -1,0 +1,279 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry} % Adjust page margins to accommodate larger table
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{colortbl}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\geometry{left=1in, right=1in, top=1in, bottom=1in}
+
+\definecolor{lightred}{RGB}{255,230,230}
+\definecolor{darkred}{RGB}{139,0,0}
+
+\newcommand{\sectionheading}[1]{%
+  \multicolumn{2}{l}{%
+    \cellcolor{darkred}\color{white}\bfseries\Large #1%
+  }%
+}
+
+
+
+\begin{document}
+\thispagestyle{empty} % Removes page number
+
+% Yellow background block
+\begin{tikzpicture}[remember picture, overlay]
+    \fill[yellow] (current page.north east) rectangle ++(-6, -\paperheight);
+\end{tikzpicture}
+
+% Title Text in a straight line
+\begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=north west, xshift=-1.2cm, yshift=0.25cm] {
+        {\fontsize{25pt}{48pt}\selectfont
+        \definecolor{darkred}{RGB}{139,0,0}\textcolor{red!85!black}{MAULANA ABUL KALAM AZAD}}
+    };
+\end{tikzpicture}
+\begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=north west, xshift=-1.2cm, yshift=-1cm] {
+        {\fontsize{25pt}{48pt}\selectfont
+        \textcolor{black!70!black}{UNIVERSITY OF TECHNOLOGY}}
+    };
+\end{tikzpicture}
+
+\begin{tikzpicture}[remember picture, overlay]
+    % Absolute positioning
+    \node[anchor=north west, xshift=6cm, yshift=-5.5cm] at (current page.north west) {
+        \includegraphics[width=5cm]{makaut.png}
+    };
+\end{tikzpicture}
+
+\begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=north west, xshift=0.9cm, yshift=-11.75cm] at (current page.north west) {
+        {\fontsize{20pt}{24pt}\selectfont
+        \textcolor{black}{\underline{Software Tools and Technology (Lab Assignment)}}}
+    };
+\end{tikzpicture}
+
+\begin{center}
+
+\vspace{9 cm}
+\renewcommand{\arraystretch}{2.5}
+\hspace*{-2.25in}
+\begin{tabular}{ |p{3cm}|p{4cm}|p{5cm}| }
+\hline
+\multicolumn{3}{|c|}{\Large \textbf{\textit{Group 15}}} \\
+\hline
+NAME & ROLL NO.& DEPARTMENT \\
+\hline
+Shreyasi Mahato [LEAD]& 30001223051& Bachelor of Computer Application \\
+\hline
+Mouteer Datta& 30059223026& Bsc in Forensic Science\\
+\hline
+Rajib Roy& 30001223040& Bachelor of Computer Application\\
+\hline
+Priyanshu Sarma Sarkar& 300054623009& Bsc in Artificial Intelligence\\
+\hline
+Abhirup Mukherjee& 30085323008& Bsc in CyberSecurity\\
+\hline
+\end{tabular}
+
+\end{center}
+
+\newpage
+\begin{center}
+    \section*{Acknowledgment}
+\end{center}
+
+We are deeply grateful to our instructor, Dr. Ayan Ghosh, for his guidance and support throughout this project. His expertise and mentorship were invaluable in helping us successfully complete the tasks.\\
+
+We would also like to express our sincere appreciation to the group members, to acknowledge the hard work and dedication of our team members:\\
+
+- Shreyasi Mahato\\
+- Mouteer Datta\\
+- Rajib Roy\\
+- Priyanshu Sharma Sarkar\\
+- Abhirup Mukherjee\\
+
+Each member contributed significantly to this project, and without their collaboration and commitment, this project would not have been possible. We thank everyone for their dedication and collaboration. Each member's contributions played a vital role in the smooth execution of this project.\\
+
+Lastly, we thank our institution for providing us with the resources and the opportunity to learn and apply our knowledge in this project on Software Tools and Technology.
+
+\vspace{2cm}
+\noindent
+Date: 23.09.2024
+\\
+\\
+\\
+
+
+Signature
+\newpage
+\begin{table}[h]
+\centering
+\large % Increase overall font size
+\setlength{\arrayrulewidth}{1.5pt}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{>{\bfseries}l p{0.75\textwidth}}
+\toprule[2.5pt]
+\sectionheading{Index} \\
+\midrule
+1. & \cellcolor{yellow}Assignment 1 \\
+   & My First LATEX Document \dotfill \pageref{fig:Shreyasi} \\
+\midrule
+2. & \cellcolor{yellow} Assignment 2 \\
+   & Curriculum Vitae \dotfill {6} \\
+\midrule
+3. & \cellcolor{yellow}Assignment 3 \\
+   & Calculator Program using C \dotfill {8} \\
+\midrule
+4. & \cellcolor{yellow}Assignment 4 \\
+   & Matrix in LaTeX \dotfill {11} \\
+   
+\midrule
+5. & \cellcolor{yellow}Assignment 5 \\
+   & Mind Reader App \dotfill {14} \\
+  
+\bottomrule[2.5pt]
+\end{tabular}
+
+\end{table}
+
+% Decorative element using TikZ
+\begin{tikzpicture}[remember picture, overlay]
+\node[anchor=south east, xshift=-1cm, yshift=1cm] at (current page.south east) {
+  \begin{tikzpicture}[scale=1.5] % Increased scale for larger decorative element
+    \draw[red, very thick] (0,0) circle (0.5cm);
+    \draw[red, very thick] (0,0) -- (0.5,0.5);
+    \draw[red, very thick] (0,0) -- (-0.5,-0.5);
+    \draw[red, very thick] (0,0) -- (0.5,-0.5);
+    \draw[red, very thick] (0,0) -- (-0.5,0.5);
+  \end{tikzpicture}
+};
+\end{tikzpicture}
+
+\title{\underline{{Assignment-1 by Shreyasi}}}
+\author{SHREYASI MAHATO}
+\date{July 27, 2004}
+
+
+\maketitle
+
+\begin{figure}[h!]
+\centering
+    \includegraphics[width=0.25\linewidth]{SHREYASI.jpg}
+    \caption{SHREYASI}
+    \label{fig:Shreyasi}
+
+\end{figure}
+\section{Introduction}
+
+\subsection{About Me}
+I am Shreyasi Mahato from Purulia,West Bengal. I am 20 years old.I completed my school from A.G.P.N Convent and E.R school. Currently i am studying in Maulana Abul Kalam Azad University of Technology, in Department Of Computer Application.
+
+
+I’m a 20-year-old with a passion for exploring life’s many opportunities and challenges. At this exciting stage in my journey, I’m focused on discovering who I am and what I want to achieve. Whether it’s through my studies, hobbies, or spending time with friends and family, I approach life with curiosity and enthusiasm.
+
+I’m driven by a desire to learn and grow, constantly seeking out new experiences that help me better understand the world and my place in it. I value meaningful connections with others and believe in the importance of kindness, empathy, and open-mindedness. I’m someone who enjoys deep conversations, creative pursuits, and finding joy in the little things.
+
+As I navigate my twenties, I’m excited about the endless possibilities that the future holds. I’m determined to make the most of this time by setting goals, pursuing my passions, and staying true to myself. With a positive outlook and a strong sense of purpose, I’m ready to embrace whatever comes next.
+
+
+\subsection{Interests \& Hobbies}
+\begin{itemize}
+    \item My hobby is doing Calligraphy.
+    \item I mainly interested in Drawing and Painting
+   
+\end{itemize}
+
+\subsection{Favorite Quotations}
+\begin{enumerate}
+    \item \textit{ "The sky is not the limit, its just the beginning."-Shanovia Lumpkin}
+    \item \textit{"Flying is learning how to throw yourself at the ground and miss" -Douglas Adams"}
+\end{enumerate}
+
+\section{Mathematics}
+
+\subsection{Mathematics and Me}
+Reflecting on My Experiences with Mathematics
+
+Mathematics has always captivated me with its power to describe the world through logic and precision. I love how it challenges me to think critically and creatively, and there’s a deep satisfaction in solving complex problems where every step leads to a definitive answer.
+
+This year, I’ve particularly enjoyed delving into [mention specific topics, like algebra, geometry, calculus, etc.], which have broadened my perspective and deepened my appreciation for the subject. However, the journey hasn’t been without its difficulties. I found [mention the most challenging aspect, like "grappling with abstract concepts" or "mastering certain formulas"] to be especially challenging. Yet, overcoming these obstacles has been incredibly rewarding, pushing me to grow both academically and personally.
+
+Looking ahead, I’m excited to continue my mathematical journey, with a particular interest in exploring [mention any specific interests, like applied mathematics, statistics, etc.]. I believe that mathematics is not just a subject, but a powerful tool that will be invaluable in whatever path I choose to pursue.
+
+\subsection{Mathematical Notation}
+Throughout my studies, I have frequently used mathematical notation to express complex ideas concisely. For example, I often work with quadratic equations and derivatives, using them to solve problems in physics and engineering. Mastering this notation allows me to communicate mathematical concepts clearly and effectively.
+
+
+\subsubsection{Superscripts, subscripts, and Greek letters}
+\begin{align*}
+    &\text{(a)} & 2345 \\
+    &\text{(b)} & 23_{45} \\
+    &\text{(c)} & 2345^{5} \\
+    &\text{(d)} & 2345_{\pi} \\
+    &\text{(e)} & \cos \theta \\
+    &\text{(f)} & \tan^{-1}(2.345) \\
+    &\text{(g)} & \log_{23} 45 \\
+    &\text{(h)} & \ln 2345 \\
+    &\text{(i)} & e^{2.345} \\
+    &\text{(j)} & 0 < x \leq 2345 \\
+    &\text{(k)} & y \geq 2345 \\
+\end{align*}
+
+\subsubsection{Roots, fractions, and displaystyle}
+\begin{align*}
+    &\text{(a)} & \sqrt{2345} \\
+    &\text{(b)} & \sqrt[23]{45} \\
+    &\text{(c)} & \frac{23}{45} \quad \text{displaystyle:} \quad \frac{\displaystyle 23}{\displaystyle 45} \\
+    &\text{(d)} & \frac{2}{3 + 4} \quad \text{displaystyle:} \quad \frac{\displaystyle 2}{\displaystyle 3 + 4} \\
+    &\text{(e)} & \sqrt{\frac{23}{45}} \quad \text{displaystyle:} \quad \sqrt{\frac{\displaystyle 23}{\displaystyle 45}} \\
+\end{align*}
+
+\subsubsection{Delimiters}
+\[
+    \text{(a)} \quad \left( 2 + \frac{3}{45} \right)
+\]
+\[
+    \text{(b)} \quad \left| \frac{23 - 4}{5} \right|
+\]
+
+\subsubsection{Tables and equation arrays}
+\begin{center}
+    \begin{tabular}{c c c c c}
+        $x$ & 1 & 2 & 3 & 4 \\
+        $f(x)$ & 2 & 3 & 4 & 5 \\
+    \end{tabular}
+\end{center}
+
+\begin{align}
+    &\text{(a)} & 2 + 3 - 4 \times 5 = x \\
+    &\text{(b)} & 1 + 9 - 14 = x \\
+    &\text{(c)} & 10 - 14 = x \\
+    &\text{(d)} & x = -4
+\end{align}
+
+\subsubsection{Functions \& Formulas}
+\begin{align*}
+    &\text{(a)} & x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \\
+    &\text{(b)} & f(x) = \left( x + \frac{2}{3} \right)^2 - \frac{4}{5} \\
+    &\text{(c)} & \lim_{h \to 0} \frac{f(x+h) - f(x)}{h} = f'(x) \\
+    &\text{(d)} & [f(g(x))]' = f'(g(x)) \cdot g'(x) \\
+    &\text{(e)} & \frac{d^2 y}{dx^2} = f''(x) \\
+    &\text{(f)} & \int \sec^2 x \, dx = \tan x + C \\
+    &\text{(g)} & \int e^{2x} \, dx = \frac{1}{2} e^{2x} + C \\
+    &\text{(h)} & \int_{a}^{b} f'(x) \, dx = f(b) - f(a) \\
+    &\text{(i)} & \frac{d}{dx} \int_{a}^{g(x)} f(t) \, dt = f(g(x)) \cdot g'(x) \\
+    &\text{(j)} & y_1 = y_0 + hF(x_0, y_0) \\
+    &\text{(k)} & a_n = \{2345, \frac{2345}{2}, \frac{2345}{4}, \ldots, \frac{2345}{2^n}\} \\
+    &\text{(l)} & S_n = \sum_{n=1}^{\infty} \frac{2345}{2^n} \\
+    &\text{(m)} & \sum_{n=0}^{\infty} \frac{f^{(n)}(c)}{n!} (x-c)^n \\
+    &\text{(n)} & \mathbf{v}(t) = x'(t) \mathbf{i} + y'(t) \mathbf{j} = \left\langle \frac{dx}{dt}, \frac{dy}{dt} \right\rangle \\
+    &\text{(o)} & A = \frac{1}{2} \int_{\alpha}^{\beta} r^2 \, d\theta \\
+\end{align*}
+
+\end{document}
